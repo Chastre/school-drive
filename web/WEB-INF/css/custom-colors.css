@@ -1,0 +1,349 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 04/01/2026, 21:38:29
+    Author     : pmnch
+*/
+/* ========================================
+   PALETA DE CORES PERSONALIZADA
+   Azul, Castanho, Bordô, Amarelo/Dourado e Branco
+   ======================================== */
+
+:root {
+    --azul: #2C5F7C;
+    --castanho: #8B6F47;
+    --bordo: #800020;
+    --amarelo: #FFC107;
+    --branco: #FFFFFF;
+    --azul-escuro: #1a3a4d;
+    --castanho-claro: #a58a5f;
+    --bordo-claro: #a02838;
+    --amarelo-escuro: #e0a800;
+}
+
+/* ============================================
+   CORES GLOBAIS - APLICAM A TODO O SITE
+   ============================================ */
+
+/* COR PRIMÁRIA - AMARELO/DOURADO */
+.text-primary,
+.btn-link,
+.nav-link:hover,
+.nav-link.active {
+    color: var(--amarelo) !important;
+}
+
+.bg-primary,
+.btn-primary,
+.badge.bg-primary {
+    background-color: var(--amarelo) !important;
+    border-color: var(--amarelo) !important;
+    color: #333 !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--amarelo-escuro) !important;
+    border-color: var(--amarelo-escuro) !important;
+}
+
+/* COR SECUNDÁRIA - CASTANHO */
+.text-secondary,
+.btn-secondary {
+    color: var(--branco) !important;
+}
+
+.bg-secondary,
+.btn-secondary {
+    background-color: var(--castanho) !important;
+    border-color: var(--castanho) !important;
+}
+
+.btn-secondary:hover {
+    background-color: var(--castanho-claro) !important;
+    border-color: var(--castanho-claro) !important;
+}
+
+/* NAVBAR - BRANCO COM DETALHES AMARELO */
+.navbar-light {
+    background-color: var(--branco) !important;
+}
+
+.navbar-brand h2 {
+    color: var(--azul) !important;
+}
+
+.navbar-brand h2 i {
+    color: var(--amarelo) !important;
+}
+
+.nav-item .nav-link {
+    color: #333 !important;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link.active {
+    color: var(--amarelo) !important;
+}
+
+/* TOPBAR - AZUL ESCURO */
+.bg-dark,
+.container-fluid.bg-dark {
+    background-color: var(--azul-escuro) !important;
+}
+
+/* FOOTER - AZUL ESCURO */
+.footer,
+.container-fluid.footer {
+    background-color: var(--azul-escuro) !important;
+}
+
+/* HEADER DE PÁGINA - GRADIENTE AZUL PARA BORDÔ */
+.page-header,
+.container-fluid.page-header {
+    background: linear-gradient(135deg, var(--azul) 0%, var(--bordo) 100%) !important;
+}
+
+/* CAROUSEL - GRADIENTE AZUL PARA BORDÔ */
+.carousel-caption {
+    background: linear-gradient(to right, 
+                rgba(44, 95, 124, 0.85) 0%, 
+                rgba(128, 0, 32, 0.85) 100%) !important;
+}
+
+.carousel-item img {
+    filter: brightness(0.8);
+}
+
+/* CARDS E ÍCONES - AMARELO */
+.service-icon i,
+.fact-icon i {
+    color: var(--amarelo) !important;
+}
+
+.card:hover {
+    box-shadow: 0 0 30px rgba(255, 193, 7, 0.4) !important;
+}
+
+/* BADGES */
+.badge.bg-success {
+    background-color: var(--castanho) !important;
+}
+
+.badge.bg-danger {
+    background-color: var(--bordo) !important;
+}
+
+.badge.bg-warning {
+    background-color: var(--amarelo) !important;
+    color: #333 !important;
+}
+
+/* SPINNER DE LOADING - AMARELO */
+.spinner-grow {
+    color: var(--amarelo) !important;
+}
+
+/* BOTÃO VOLTAR AO TOPO - AMARELO */
+.back-to-top {
+    background-color: var(--amarelo) !important;
+    color: #333 !important;
+}
+
+.back-to-top:hover {
+    background-color: var(--amarelo-escuro) !important;
+}
+
+/* LINKS - AMARELO */
+a {
+    color: var(--amarelo) !important;
+}
+
+a:hover {
+    color: var(--amarelo-escuro) !important;
+}
+
+/* TÍTULOS - AZUL (exceto quando em fundo escuro) */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--azul) !important;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.page-header h1,
+.carousel-caption h1 {
+    color: var(--branco) !important;
+}
+
+/* FORMULÁRIOS - FOCO AMARELO */
+.form-control:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--amarelo) !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25) !important;
+}
+
+/* ALERTAS */
+.alert-success {
+    background-color: #d4edda !important;
+    border-color: var(--castanho) !important;
+    color: #155724 !important;
+}
+
+.alert-danger {
+    background-color: #f8d7da !important;
+    border-color: var(--bordo) !important;
+    color: var(--bordo) !important;
+}
+
+.alert-warning {
+    background-color: #fff3cd !important;
+    border-color: var(--amarelo) !important;
+    color: #856404 !important;
+}
+
+/* ============================================
+   PÁGINAS COM CSS INLINE (listar, editar, etc)
+   ============================================ */
+
+/* BACKGROUNDS - Gradiente Azul para Bordô */
+body {
+    background: linear-gradient(135deg, var(--azul) 0%, var(--bordo) 100%) !important;
+}
+
+/* BOTÕES - Amarelo como primário */
+.btn-primary,
+button[type="submit"] {
+    background: var(--amarelo) !important;
+    border-color: var(--amarelo) !important;
+    color: #333 !important;
+}
+
+.btn-primary:hover,
+button[type="submit"]:hover {
+    background: var(--amarelo-escuro) !important;
+    border-color: var(--amarelo-escuro) !important;
+}
+
+/* BOTÕES SECUNDÁRIOS - Castanho */
+.btn-secondary {
+    background: var(--castanho) !important;
+    border-color: var(--castanho) !important;
+}
+
+.btn-secondary:hover {
+    background: var(--castanho-claro) !important;
+}
+
+/* BOTÃO DANGER - Bordô */
+.btn-danger {
+    background: var(--bordo) !important;
+    border-color: var(--bordo) !important;
+}
+
+.btn-danger:hover {
+    background: var(--bordo-claro) !important;
+}
+
+/* BOTÃO WARNING - Amarelo */
+.btn-warning {
+    background: var(--amarelo) !important;
+    border-color: var(--amarelo) !important;
+    color: #333 !important;
+}
+
+.btn-warning:hover {
+    background: var(--amarelo-escuro) !important;
+}
+
+/* TABELAS - Header Azul */
+thead,
+table thead {
+    background: var(--azul) !important;
+    color: var(--branco) !important;
+}
+
+th {
+    background: var(--azul) !important;
+    color: var(--branco) !important;
+}
+
+tbody tr:hover {
+    background: rgba(255, 193, 7, 0.1) !important;
+}
+
+/* ÍCONES NO TOPBAR - AMARELO */
+.fa-map-marker-alt,
+.fa-clock,
+.fa-phone-alt,
+.fa-user-shield,
+.fa-user-tie,
+.fa-graduation-cap {
+    color: var(--amarelo) !important;
+}
+
+/* SEPARADORES */
+.border-end {
+    border-color: var(--castanho) !important;
+}
+
+/* CREDENCIAIS INFO */
+.credentials-info {
+    background: rgba(255, 193, 7, 0.1) !important;
+    border: 1px solid var(--amarelo) !important;
+}
+
+.credentials-info h6 {
+    color: var(--amarelo) !important;
+}
+
+/* HOVER DOS CARDS */
+.service-item:hover,
+.fact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0.5rem 1.5rem rgba(255, 193, 7, 0.3) !important;
+}
+
+/* TABELAS STRIPED */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 193, 7, 0.05) !important;
+}
+
+/* PAGINAÇÃO */
+.pagination .page-link {
+    color: var(--amarelo) !important;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--amarelo) !important;
+    border-color: var(--amarelo) !important;
+    color: #333 !important;
+}
+
+/* LOGIN PAGE */
+.login-page {
+    background: linear-gradient(135deg, var(--azul) 0%, var(--bordo) 100%) !important;
+}
+
+.login-header i,
+.login-header h2 {
+    color: var(--amarelo) !important;
+}
+
+/* LABELS */
+label,
+.form-label {
+    color: #333 !important;
+    font-weight: 600;
+}
+
+.login-page label,
+.login-page .form-label {
+    color: var(--amarelo) !important;
+}
