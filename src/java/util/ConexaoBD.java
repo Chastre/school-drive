@@ -9,11 +9,11 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class ConexaoBD {
-    
-    private static final String URL = "jdbc:mysql://localhost:3306/escola_conducao";
+
+    private static final String URL = "jdbc:mysql://tramway.proxy.rlwy.net:44037/railway";
     private static final String USER = "root";
-    private static final String PASSWORD = "";
-    
+    private static final String PASSWORD = "cTahZQgvxSLweBMpkjulTZOgsIRZNxnb";
+
     public static Connection getConnection() {
         Connection conn = null;
         try {
